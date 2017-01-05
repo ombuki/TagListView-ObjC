@@ -13,6 +13,7 @@ IB_DESIGNABLE
 @interface TagView : UIButton
 
 - (instancetype) initWithTitle:(NSString *)title;
+- (instancetype) initWithTitle:(NSString *)title andImage:(UIImage *)image;
 
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 @property (nonatomic) IBInspectable CGFloat borderWidth;
@@ -21,7 +22,7 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable CGFloat paddingY;
 @property (nonatomic) IBInspectable CGFloat paddingX;
 @property (nonatomic) UIFont *textFont;
-
+@property (nonatomic, strong) UIImage *image;
 @property (nonatomic, copy) void (^onTap)(TagView *);
 
 @end

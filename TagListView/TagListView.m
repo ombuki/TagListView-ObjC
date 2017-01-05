@@ -177,6 +177,25 @@
     return tagView;
 }
 
+- (TagView *)addTag:(NSString *)title withImage:(UIImage *)image {
+    TagView *tagView = [[TagView alloc] initWithTitle:title andImage:image];
+    
+    [tagView setTextColor: [self textColor]];
+    [tagView setBackgroundColor: [self tagBackgroundColor]];
+    [tagView setCornerRadius: [self cornerRadius]];
+    [tagView setBorderWidth: [self borderWidth]];
+    [tagView setBorderColor: [self borderColor]];
+    [tagView setPaddingY: [self paddingY]];
+    [tagView setPaddingX: [self paddingX]];
+    [tagView setTextFont: [self textFont]];
+    
+    [tagView addTarget:self action:@selector(tagPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self addTagView: tagView];
+    
+    return tagView;
+}
+
 - (void) addTagView:(TagView *)tagView {
     [[self tagViews] insertObject:tagView atIndex:[self.tagViews count]];
     [self rearrangeViews];

@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TagListView-ObjC"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Simple but highly customizable iOS tag list view, in Objective-C."
   s.description      = <<-DESC
                         "Simple but highly customizable iOS tag list view, in Objective-C. Based on Swift version by XHacker"

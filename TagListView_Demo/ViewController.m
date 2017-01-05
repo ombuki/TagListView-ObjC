@@ -27,7 +27,7 @@
     [self.tagListView addTag:@"are"];
     [self.tagListView addTag:@"some"];
     [self.tagListView addTag:@"example"];
-    [self.tagListView addTag:@"tags"];
+    [self.tagListView addTag:@"tags" withImage:[UIImage imageNamed:@"eklecopy8"]];
     [self.tagListView addTagsAccordingToDataSourceArray:@[@"from", @"array", @"too"] withOnTapForEach:^(TagView *tagView) {
         tagView.backgroundColor = [UIColor blueColor];
     }];

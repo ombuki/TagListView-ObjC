@@ -132,6 +132,7 @@
 				TargetAttributes = {
 					1518196B1B57BE89006A1000 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = Q4Z98MC86G;
 					};
 				};
 			};
@@ -289,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q4Z98MC86G;
 				INFOPLIST_FILE = "$(SRCROOT)/TagListView_Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q4Z98MC86G;
 				INFOPLIST_FILE = "$(SRCROOT)/TagListView_Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
