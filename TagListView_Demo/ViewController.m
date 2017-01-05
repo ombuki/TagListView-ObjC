@@ -26,8 +26,8 @@
     }];
     [self.tagListView addTag:@"are"];
     [self.tagListView addTag:@"some"];
-    [self.tagListView addTag:@"example"];
-    [self.tagListView addTag:@"tags" withImage:[UIImage imageNamed:@"eklecopy8"]];
+    [self.tagListView addTag:@"examplesefasgadgsdhsfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfgh"];
+    [self.tagListView addTag:@"examplesefasgadgsdhsfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfghdfgh" withImage:[UIImage imageNamed:@"eklecopy8"] andMaximumWidth:self.view.frame.size.width/2];
     [self.tagListView addTagsAccordingToDataSourceArray:@[@"from", @"array", @"too"] withOnTapForEach:^(TagView *tagView) {
         tagView.backgroundColor = [UIColor blueColor];
     }];

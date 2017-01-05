@@ -34,6 +34,7 @@ IB_DESIGNABLE
 - (void)addTagsAccordingToDataSourceArray:(NSArray<NSString *> *)dataSourceArray withOnTapForEach:(void(^)(TagView *tagView))onTapBlock;
 - (TagView *)addTag:(NSString *)title;
 - (TagView *)addTag:(NSString *)title withImage:(UIImage *)image;
+- (TagView *)addTag:(NSString *)title withImage:(UIImage *)image andMaximumWidth:(CGFloat)width;
 - (void)removeTag:(NSString *)title;
 - (void)removeAllTags;
 

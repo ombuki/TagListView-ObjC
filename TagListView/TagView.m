@@ -35,6 +35,22 @@
     return self;
 }
 
+- (instancetype) initWithTitle:(NSString *)title andImage:(UIImage *)image maximumWidth:(CGFloat)width {
+    self = [super init];
+    if(self) {
+        [self setTitle:title forState:UIControlStateNormal];
+        if (image) {
+            [self setImage:image forState:UIControlStateNormal];
+            self.image = image;
+        }
+        self.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+        self.maximumWidth = width;
+        CGSize intrinsicSize = [self intrinsicContentSize];
+        self.frame = CGRectMake(0, 0, intrinsicSize.width, intrinsicSize.height);
+    }
+    return self;
+}
+
 - (CGSize) intrinsicContentSize {
     CGSize size = [self.titleLabel.text sizeWithAttributes:@{NSFontAttributeName: self.titleLabel.font}];
     
@@ -42,6 +58,9 @@
     size.width += self.paddingX * 2;
     if (self.image) {
         size.width += self.image.size.width;
+    }
+    if (self.maximumWidth > 0) {
+        size.width = MIN(size.width, self.maximumWidth);
     }
     return size;
 }

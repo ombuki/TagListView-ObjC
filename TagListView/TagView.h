@@ -14,6 +14,7 @@ IB_DESIGNABLE
 
 - (instancetype) initWithTitle:(NSString *)title;
 - (instancetype) initWithTitle:(NSString *)title andImage:(UIImage *)image;
+- (instancetype) initWithTitle:(NSString *)title andImage:(UIImage *)image maximumWidth:(CGFloat)width;
 
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 @property (nonatomic) IBInspectable CGFloat borderWidth;
@@ -21,6 +22,7 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable UIColor *textColor;
 @property (nonatomic) IBInspectable CGFloat paddingY;
 @property (nonatomic) IBInspectable CGFloat paddingX;
+@property (nonatomic) CGFloat maximumWidth;
 @property (nonatomic) UIFont *textFont;
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, copy) void (^onTap)(TagView *);
