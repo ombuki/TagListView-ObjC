@@ -213,7 +213,7 @@
 
 - (void)removeTag:(NSString *)title {
     // Author's note: Loop the array in reversed order to remove items during loop
-    for(int index = (int)[[self tagViews] count] - 1 ; index <= 0; index--) {
+    for(int index = (int)[[self tagViews] count] - 1 ; index >= 0; index--) {
         TagView *tagView = [[self tagViews] objectAtIndex:index];
         if([[tagView currentTitle] isEqualToString:title]) {
             [tagView removeFromSuperview];
